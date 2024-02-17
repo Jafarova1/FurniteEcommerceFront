@@ -19,15 +19,33 @@
           <a href="blog.html">Blog</a>
          <a href="register.html"><img src="	https://themewagon.github.io/furni/images/user.svg" alt=""></a>
           <div class="menu" onclick="toggleMenu()">&#9776; Menu</div>
-          <div class="basket-icon" onclick="openBasket()">🛒</div>
+          <!-- <div class="basket-icon" onclick="openBasket()">🛒</div> -->
+          <div class="cart-btn">
+            <i id="cart" class="fas fa-shopping-cart"></i>
+              <span class ="cart-quantity">0</span>
+          </div>
         </div>
         <!-- Modal for the shopping basket -->
-        <div id="basketModal" class="modal">
+        <!-- <div id="basketModal" class="modal">
           <div class="modal-content">
             <span class="close" onclick="closeBasket()">&times;</span>
             <h2>Your Shopping Basket</h2>
             <ul id="basketItems"></ul>
           </div>
+        </div> -->
+        <div class="cart-modal-overlay">
+            <div class="cart-modal">
+              <i id="close-btn" class="fas fa-times"></i>
+                <h1 class="cart-is-empty">Cart is empty</h1>
+              
+                <div class="product-rows">
+                </div>
+                <div class="total">
+                  <h1 class="cart-total">TOTAL</h1>
+                    <span class="total-price">$0</span>
+                      <button class="purchase-btn">PURCHASE</button>
+                </div>
+              </div>
         </div>
       </header>
     
@@ -68,43 +86,68 @@
 
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <div class="image">
+                     
+                            <div class="card-1 card">
+                                <img class="product-image" src="https://themewagon.github.io/furni/images/product-1.png" alt="">
+                                  <button class="add-to-cart">Add to cart</button>
+                                    <span class="product-price">$1395</span>
+                              </div>
+                    
+                 
+                        <!-- <div class="image">
                             <a href=""><img src="	https://themewagon.github.io/furni/images/product-1.png" alt=""></a>
                         </div>
                         <div class="price">
                             <h6>Nordic Chair</h6>
-                            <span>50$</span>
-                        </div>
-                        <div class="plus">
+                          
+                            <button class="add-to-cart">Add to cart</button>
+                            <span class="product-price">$1395</span>
+                        </div> -->
+
+                        <!-- <div class="plus">
                       <a href="">      <i class="fa-solid fa-circle-plus"></i></a>
-                        </div>
+                        </div> -->
                      
                    
 
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <div class="image">
+                        <div class="card-2 card">
+                            <img class="product-image" src="https://themewagon.github.io/furni/images/product-2.png" alt="">
+                            <button class="add-to-cart">Add to cart</button>
+                              <span class="product-price">$1175</span>
+                          </div>
+                        <!-- <div class="image">
                             <a href=""><img src="	https://themewagon.github.io/furni/images/product-2.png" alt=""></a>
                         </div>
                         <div class="price">
                             <h6>Kruzo Aero Chair</h6>
-                            <span>75$</span>
-                        </div>
-                        <div class="plus">
+                        
+                            <button class="add-to-cart">Add to cart</button>
+                            <span class="product-price">$1395</span>
+                        </div> -->
+                        <!-- <div class="plus">
                          <a href="">   <i class="fa-solid fa-circle-plus"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-3 col-md-4">
-                          <div class="image">
+                        <div class="card-3 card">
+                            <img class="product-image" src="https://themewagon.github.io/furni/images/product-3.png" alt="">
+                              <button class="add-to-cart">Add to cart</button>
+                                <span class="product-price">$1150</span>
+                          </div>
+                          <!-- <div class="image">
                             <a href=""><img src="https://themewagon.github.io/furni/images/product-3.png" alt=""></a>
                           </div>
                           <div class="price">
                             <h6>Ergonomic Chair</h6>
-                            <span>68$</span>
-                        </div>
-                        <div class="plus">
+                           
+                            <button class="add-to-cart">Add to cart</button>
+                            <span class="product-price">$1395</span>
+                        </div> -->
+                        <!-- <div class="plus">
                            <a href=""> <i class="fa-solid fa-circle-plus"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
